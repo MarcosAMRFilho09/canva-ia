@@ -1,0 +1,215 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", serif;
+  background: #b5b0a7;
+  color: #333;
+}
+
+/* Navbar */
+header {
+  background: #f1efe8;
+  padding: 20px 40px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #7a5c2e;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: 1px solid #333;
+  background: transparent;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: #7a5c2e;
+  color: #fff;
+  border-color: #7a5c2e;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  background: url("imagens/backgraund.png") center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+/* Produtos */
+.produtos {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.produtos h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 produtos por linha */
+  gap: 30px;
+  max-width: 1000px; /* largura máxima centralizada */
+  margin: auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 15px 0 5px;
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Footer */
+footer {
+  background: #bab8b0;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Sobre nós */
+.sobre {
+  padding: 60px;
+  max-width: 800px;
+  margin: auto;
+  text-align: justify;
+}
+
+.sobre h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Cadastro */
+.cadastro {
+  padding: 40px;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+.cadastro form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cadastro input {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+}
+
+.cadastro .btn {
+  background: #7a5c2e;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cadastro .btn:hover {
+  background: #5a421f;
+}
+
+.voltar {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  background: transparent;
+  border: 1px solid #333;
+  color: #333;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.voltar:hover {
+  background: #333;
+  color: #fff;
+}
